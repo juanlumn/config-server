@@ -31,7 +31,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                ansiblePlaybook colorized: true, extras: '-e "jenkins_workspace=${WORKSPACE} app_name=config-server host_name=Config-Server"', installation: 'Ansible 2.2.0', inventory: '/home/ansible/hosts/host', playbook: '/home/ansible/hosts/Deploy_Applications.yml', sudoUser: null
+                ansiblePlaybook colorized: true, extras: '-e "jenkins_workspace=${WORKSPACE} app_name=config-server host_name=Config-Server"', installation: 'Ansible 2.2.0', inventory: '/home/ansible/hosts/host', playbook: '/home/ansible/Deploy_Applications.yml', sudoUser: null
             }
         }
     }
