@@ -1,0 +1,17 @@
+server:
+  port: set_the_port_here
+  
+management:
+  context-path: /admin
+  security:
+    enabled: false
+
+spring:
+  application:
+    name: configserverexample
+  cloud:
+    config:
+      server:
+        git:
+          uri: set_the_uri_to your_conf_here
+          search-paths: '*'
