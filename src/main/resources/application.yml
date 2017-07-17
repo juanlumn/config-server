@@ -13,5 +13,5 @@ spring:
     config:
       server:
         git:
-          uri: set_the_uri_to your_conf_here
+          uri: https://github.com/juanlumn/spring-config-repo.git
           search-paths: '*'
