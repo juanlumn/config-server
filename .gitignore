@@ -9,3 +9,5 @@ src/test/resources/
 /.idea/compiler.xml
 .idea
 /config-server.iml
+logs/
+/logs/
