@@ -12,8 +12,11 @@ buildscript {
 }
 
 apply plugin: 'java'
+apply plugin: 'eclipse'
 apply plugin: 'idea'
+apply plugin: "io.spring.dependency-management"
 apply plugin: 'org.springframework.boot'
+apply plugin:"jacoco"
 
 jar {
 	baseName = 'config-server'
@@ -23,6 +26,9 @@ jar {
 springBoot {
 	executable = true
 }
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
 	mavenCentral()
