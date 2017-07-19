@@ -1,10 +1,17 @@
 server:
-  port: set_the_port_here
-  
+  port: 1111
+
 management:
   context-path: /admin
   security:
     enabled: false
+
+logging:
+  file: logs/${spring.application.name}.log
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: DEBUG
+    com.atsistemas: DEBUG
 
 spring:
   application:
